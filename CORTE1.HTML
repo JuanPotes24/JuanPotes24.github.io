@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Aplicaciones Web</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Si tienes estilos separados -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .equation {
+            font-size: 1.5em;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .table-container, .chart-container {
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        #chart_div {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Proyecto de Aplicaciones Web</h1>
+        <p><strong>Nombres:</strong> <br>Juan David Potes Arredondo 2116616 <br> Juan José Gonzalez Caracas 2116615</p>
+
+        <!-- Ecuación renderizada con MathJax -->
+        <div class="equation">
+            $$Y = \frac{\arcsin(a - b) + \arccos(c \cdot d) + \sqrt{e - f} + \ln(g \cdot h)}{\frac{\arccos(i / j)}{\sqrt{k + l}}} + \ln(m - n)$$
+        </div>
+
+        <!-- Botón para procesar -->
+        <button id="processButton">Procesar</button>
+
+        <!-- Tabla para mostrar los errores -->
+        <div class="table-container">
+            <h2>Tabla de Errores</h2>
+            <table id="errorTable">
+                <thead>
+                    <tr>
+                        <th>Tipo de Error</th>
+                        <th>Total de Errores</th>
+                        <th>Porcentaje (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos se llenarán dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Gráfico de pastel para visualizar los errores -->
+        <div class="chart-container">
+            <h2>Gráfico Estadístico</h2>
+            <div id="chart_div"></div>
+        </div>
+    </div>
+
+    <!-- Referencia al archivo JavaScript externo -->
+    <script src="CORTE1.js"></script>
+</body>
+</html>
